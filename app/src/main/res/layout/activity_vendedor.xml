@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vendedor"
+    android:weightSum="100"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_weight="20"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pedidos"
+            android:gravity="center_horizontal"
+            android:textColor="#FFF"
+            android:textStyle="normal|bold|italic"
+            android:textSize="35dp"
+            android:layout_marginBottom="30dp"/>
+<TextView
+    android:id="@+id/txtNombre"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="nombre :"
+    android:textColor="#FFF"
+    android:textSize="25dp"
+    android:textStyle="normal|italic"
+    />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siguiente pedido"
+            android:textColor="#FFF"
+            android:textSize="25dp"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSabor"
+            android:hint="Sabor: "
+            android:textColor="#FFF"
+            android:textStyle="normal|italic"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/txtTamano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tamaño: "
+            android:textColor="#FFF"
+            android:textSize="25dp"
+            android:textStyle="normal|italic" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgJugo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="15dp"
+        android:layout_weight="80"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/buttonPreparar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:bufferType="normal"
+            android:gravity="center"
+            android:paddingHorizontal="5dp"
+            android:shadowColor="#000000"
+            android:text="Preparar"
+            android:textColor="#146BFF"
+            android:textSize="23dp"
+            android:textStyle="normal|bold|italic"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/buttonCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:bufferType="normal"
+            android:gravity="center"
+            android:paddingHorizontal="5dp"
+            android:shadowColor="#000000"
+            android:text="Cancelar"
+            android:textColor="#146BFF"
+            android:textSize="23dp"
+            android:textStyle="normal|bold|italic"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+</LinearLayout>
